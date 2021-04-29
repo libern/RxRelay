@@ -110,7 +110,7 @@ public final class BehaviorRelay<T> extends Relay<T> {
      */
     BehaviorRelay(T defaultValue) {
         this();
-        if (defaultValue == null) throw new NullPointerException("defaultValue == null");
+//        if (defaultValue == null) throw new NullPointerException("defaultValue == null");
         value.lazySet(defaultValue);
     }
 
