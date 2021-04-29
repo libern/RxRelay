@@ -128,7 +128,7 @@ public final class BehaviorRelay<T> extends Relay<T> {
 
     @Override
     public void accept(T value) {
-        if (value == null) throw new NullPointerException("value == null");
+//        if (value == null) throw new NullPointerException("value == null");
 
         setCurrent(value);
         for (BehaviorDisposable<T> bs : subscribers.get()) {
